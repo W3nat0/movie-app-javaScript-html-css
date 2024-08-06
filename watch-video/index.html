@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../templates/Vector.png" type="image/x-icon">
+    <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer type="module" src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>TheTrailer</h1>
+        </div>
+        <div class="search-box">
+            <form id="form1" action="">
+                <input type="text" id="search" placeholder="Search Here...">
+                <ion-icon name="search-circle-outline" class="search-btn"></ion-icon>
+            </form>
+            <div class="hint-div">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="searchbox">
+            <form id="form2" action="">
+                <input type="text" id="srch2" placeholder="Search Here...">
+                <ion-icon name="close-outline" class="close-btn"></ion-icon>
+            </form>
+        </div>
+
+        <ul class="nevigation">
+            <li><a href="#" class="home">Home</a></li>
+            <div class="dropdown">
+                <li><a href="#">Genre</a></li>
+                <div id="tags" class="dropdown-content">
+                    <a class="tag" href="#">Action</a>
+                    <a class="tag" href="#">Adventure</a>
+                </div>
+            </div>
+
+            <li><a class="popular" href="#">Popular</a></li>
+        </ul>
+
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa-sharp fa-solid fa-bars-staggered"></i>
+            </label>
+        </div>
+    </header>
+
+    <div class="video-container">
+
+    </div>
+    <div class="info">
+        <div class="movie-info">
+            <h1>Release</h1>
+            <p><span class="release-date"></span></p>
+
+            <h1>Description</h1>
+             <p class="description"></p>
+
+             <h1>Ratings</h1>
+            <p>   <svg width="18" height="15" viewBox="0 0 18 17" fill="#E60000" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.38086 0L12.4967 4.7114L17.9404 6.21885L14.4224 10.6381L14.6709 16.2812L9.38086 14.301L4.09079 16.2812L4.33931 10.6381L0.821351 6.21885L6.26501 4.7114L9.38086 0Z"/>
+            </svg>
+            <span class="rating"></span>/10</p>
+        </div>
+        <div class="actor-container">
+            <button class="arrow left-arrow" disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                <g>
+                  <path d="M12,2A10,10,0,1,0,22,12,10.011,10.011,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,12,20Z"/>
+                  <polygon points="13.293 7.293 8.586 12 13.293 16.707 14.707 15.293 11.414 12 14.707 8.707 13.293 7.293"/>
+                </g>
+              </svg></button>
+            <div class="cast"></div>
+            <button class="arrow right-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                    <g>
+                      <path d="M12,2A10,10,0,1,0,22,12,10.011,10.011,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,12,20Z"/>
+                      <polygon points="9.293 8.707 12.586 12 9.293 15.293 10.707 16.707 15.414 12 10.707 7.293 9.293 8.707"/>
+                    </g>
+                  </svg>
+            </button>
+        </div>
+    </div>
+    <div class="cards" id="cards">
+
+    </div>
+
+    <div class="loader-container">
+        <div class="loader"></div> 
+    </div>
+
+    <div class="footer">
+        <div class="f-container">
+            <div class="web-discp">
+                <h1>TheTrailer</h1>
+                <p>Our website features the latest releases, as well as classic movies that have stood the test of time.
+                    We also have a selection of international films from different countries and languages, giving you a
+                    taste of different cultures and
+                    perspectives.
+                </p>
+                <div class="social">
+                    <i class="fa-brands fa-twitter"></i>contect with us on twitter
+                </div>
+                <div class="social1">
+                    <i class="fa-sharp fa-solid fa-envelope"></i>TheTrailer@gmail.com
+                </div>
+                <p>So, grab some popcorn, sit back, and enjoy the best movies from around the world on our website.
+                    Happy watching!</p>
+            </div>
+
+            <div class="web-links">
+                <div class="head">
+                    <h3>Links</h3>
+                </div>
+
+                <div class="links">
+                    <a href="#">Movies </a>
+                    <a href="#">Shows </a>
+                    <a href="#">Series </a>
+                    <a href="#">Anime </a>
+                </div>
+                <div class="nevig">
+                    <a href="#">About Us</a>
+                    <a href="#">Request</a>
+                    <a href="#">DMCA</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheTrailer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/templates/Vector.png" type="image/x-icon">
+    <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer type="module" src="script.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>TheTrailer</h1>
+        </div>
+        <div class="search-box">
+            <form id="form1" action="">
+                <input type="text" id="search" placeholder="Search Here...">
+                <ion-icon name="search-circle-outline" class="search-btn"></ion-icon>
+            </form>
+            <div class="hint-div">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+            <div class="searchbox">
+                <form id="form2" action="">
+                    <input type="text" id="srch2" placeholder="Search Here...">
+                    <ion-icon name="close-outline" class="close-btn"></ion-icon>
+                </form>
+            </div>
+
+            <ul class="nevigation">
+                <li><a href="#" class="home">Home</a></li>
+                <div class="dropdown">
+                    <li><a href="#">Genre</a></li>
+                    <div id="tags" class="dropdown-content">
+                        <a class="tag" href="#">Action</a>
+                        <a class="tag" href="#">Adventure</a>
+                    </div>
+                </div>
+
+                <li><a class="popular" href="#">Popular</a></li>
+            </ul>
+
+            <div class="menu">
+                <label for="chk1">
+                    <i class="fa-sharp fa-solid fa-bars-staggered"></i>
+                </label>
+            </div>
+    </header>
+
+    <div class="cards" id="cards">
+
+    </div>
+
+
+    <div class="not-found" id="not-found">
+        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M19.5 10.125C20.5312 10.125 21.375 10.9688 21.375 12V19.5C21.375 20.5312 20.5312 21.375 19.5 21.375C18.4688 21.375 17.625 20.5312 17.625 19.5V12C17.625 10.9688 18.4688 10.125 19.5 10.125ZM19.4812 0.75C9.13125 0.75 0.75 9.15 0.75 19.5C0.75 29.85 9.13125 38.25 19.4812 38.25C29.85 38.25 38.25 29.85 38.25 19.5C38.25 9.15 29.85 0.75 19.4812 0.75ZM19.5 34.5C11.2125 34.5 4.5 27.7875 4.5 19.5C4.5 11.2125 11.2125 4.5 19.5 4.5C27.7875 4.5 34.5 11.2125 34.5 19.5C34.5 27.7875 27.7875 34.5 19.5 34.5ZM21.375 28.875H17.625V25.125H21.375V28.875Z"
+                fill="rgb(6, 6, 13)" />
+        </svg>
+        <p style="color: white;">The film does not found</p>
+    </div>
+
+    <div class="pagination" id="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+
+    </div>
+
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <div class="footer">
+        <div class="f-container">
+            <div class="web-discp">
+                <h1>TheTrailer</h1>
+                <p>Our website features the latest releases, as well as classic movies that have stood the test of time.
+                    We also have a selection of international films from different countries and languages, giving you a
+                    taste of different cultures and
+                    perspectives.
+                </p>
+                <div class="social">
+                    <i class="fa-brands fa-twitter"></i>contect with us on twitter
+                </div>
+                <div class="social1">
+                    <i class="fa-sharp fa-solid fa-envelope"></i>TheTrailer@gmail.com
+                </div>
+                <p>So, grab some popcorn, sit back, and enjoy the best movies from around the world on our website.
+                    Happy watching!</p>
+            </div>
+
+            <div class="web-links">
+                <div class="head">
+                    <h3>Links</h3>
+                </div>
+
+                <div class="links">
+                    <a href="#">Movies </a>
+                    <a href="#">Shows </a>
+                    <a href="#">Series </a>
+                    <a href="#">Anime </a>
+                </div>
+                <div class="nevig">
+                    <a href="#">About Us</a>
+                    <a href="#">Request</a>
+                    <a href="#">DMCA</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
